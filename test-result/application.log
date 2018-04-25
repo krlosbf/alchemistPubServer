@@ -1,0 +1,7 @@
+06 Mar 2018 15:35:59,017 INFO  ~ Starting /Applications/play-1.4.4/alchemistPubServer
+06 Mar 2018 15:35:59,722 WARN  ~ You're running Play! in DEV mode
+06 Mar 2018 15:35:59,815 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+06 Mar 2018 15:36:15,515 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0 for default
+06 Mar 2018 15:36:16,236 INFO  ~ Application 'alchemistPubServer' is now started !
+06 Mar 2018 16:06:19,165 INFO  ~ Restart: 1 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to delete a method
+06 Mar 2018 16:11:54,350 INFO  ~ Restart: 1 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to add a method
