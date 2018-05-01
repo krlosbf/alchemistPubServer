@@ -14,32 +14,10 @@ public class Application extends Controller {
         addAlcohol("Vodka",333,9.32);
         addAlcohol("Ron",500,15.28);
         addAlcohol("Naranja",2000,3.59);
-/*
-        Alcohol vodka = Alcohol.find("byName","Vodka").first();
-        Alcohol ron = Alcohol.find("byName","Ron").first();
+        addAlcohol("Cola",2000,2.34);
+        addAlcohol("JB",1000,7.90);
 
-        List<Alcohol> list = new ArrayList<Alcohol>();
 
-        Cocktail_Alcohol rel = new Cocktail_Alcohol();
-        rel.quantitat = 10;
-
-        Alcohol a = Alcohol.find("byName","Vodka").first();
-        list.add(a);
-        rel.a = a;
-        addCocktail("RonCola",12,1);
-        rel.c = c;
-        rel.save();
-        a = Alcohol.find("byName","Ron").first();
-        list.add(a);
-
-        Cocktail_Alcohol rel1 = new Cocktail_Alcohol();
-        rel1.quantitat = 20;
-        rel1.a = a;
-        rel1.c = c;
-
-        rel1.save();
-
-        renderJSON(a);*/
 
         return true;
     }
@@ -101,6 +79,13 @@ public class Application extends Controller {
         else
             return false;
     }
+
+    public static boolean getAlcoholList(){
+        List<Alcohol> list = Alcohol.findAll();
+        renderJSON(list);
+        return true;
+    }
+
 
     public static boolean test(String... s){
         //renderText(s.length);
